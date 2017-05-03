@@ -1,0 +1,5 @@
+一.ToolBar代替了ActionBar
+1.修改manifest.xml 修改android:theme  进入styles.xml 进去修改<style></style>  Theme.AppCompat.Light.NoActionBar 
+2.进入layout中 加入布局  toolBar在 V7包中  当让了 也要引入 xmlns:app="//schemas.android.com/apk/res-auto"这个命名空间
+3.进入Activity  findViewByID找到组件之后加入setSupportActionBar()将ToolBar对象传入  可以再相应的Activity中设置标签 近而显示ToolBard的名称
+4.可以加入一些Action让ToolBar更加丰富
